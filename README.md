@@ -17,6 +17,7 @@ All tests run on real hardware — no cloud, no emulation.
 ## Guides
 
 - [Qwen3.6-35B at 128 t/s on a 16 GB GPU — ik_llama.cpp + IQ3_K_R4](REPLICATE-ik-llama-IQ3_K_R4-16GB.md)
+- [Qwen3.6-27B IQ3_K_R4 + Memory OC on RTX 5060 Ti — nvoc + ik_llama.cpp](REPLICATE-Qwen3.6-27B-IQ3_K_R4-OC.md)
 
 ---
 
