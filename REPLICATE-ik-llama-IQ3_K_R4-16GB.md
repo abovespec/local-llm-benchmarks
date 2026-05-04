@@ -69,9 +69,21 @@ Build takes 10–15 minutes. Binaries land in `/data/ik-llama/build/bin/`.
 
 ---
 
-## Step 3 — Download the source model
+## Step 3 — Download the model
 
-IQ3_K_R4 is an ik_llama.cpp-specific format — no pre-built version exists. You build it yourself from a Q8_0 source.
+**Option A — Download the pre-built IQ3_K_R4 directly (easiest):**
+
+```bash
+hf download abovespec/Qwen3.6-35B-A3B-IQ3_K_R4-GGUF \
+  "Qwen3.6-35B-A3B-IQ3_K_R4.gguf" \
+  --local-dir /data/models/qwen3.6-35b/
+```
+
+HuggingFace repo: https://huggingface.co/abovespec/Qwen3.6-35B-A3B-IQ3_K_R4-GGUF
+
+**Option B — Build from Q8_0 source yourself:**
+
+IQ3_K_R4 is an ik_llama.cpp-specific format. You can also build it yourself from a Q8_0 source.
 
 ```bash
 # Install hf CLI if you don't have it
